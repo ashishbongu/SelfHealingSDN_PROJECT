@@ -22,3 +22,21 @@ LaTeX source remains the authoritative submission version.
 
 Replace the student author block in `main.tex` with the course-project authors
 and institution details before submission.
+
+## SDN diagrams
+
+The following diagrams are included for documentation and
+presentation use. They are standalone SVG files and can be opened directly in
+a browser or inserted into a Markdown report:
+
+### System architecture
+
+![Self-Healing SDN system architecture](figures/sdn-system-architecture.svg)
+
+### Multipath topology
+
+![Multipath SDN topology](figures/sdn-multipath-topology.svg)
+
+### Recovery workflow
+
+![Self-healing recovery workflow](figures/sdn-recovery-workflow.svg)

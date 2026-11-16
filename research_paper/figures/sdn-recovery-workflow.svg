@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fffaf2"/><stop offset="1" stop-color="#eef6ff"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#315d8c"/></marker>
+    <style>.title{font:700 28px Arial;fill:#17324d}.h{font:700 17px Arial;fill:#17324d}.p{font:15px Arial;fill:#29465e}.box{stroke:#315d8c;stroke-width:2;rx:16}.a{stroke:#315d8c;stroke-width:3;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <text x="600" y="48" text-anchor="middle" class="title">Self-Healing Recovery Workflow</text>
+  <rect x="40" y="160" width="180" height="130" fill="#d9ecff" class="box"/><text x="130" y="198" text-anchor="middle" class="h">1. Observe</text><text x="65" y="235" class="p">Counters and link events</text><text x="65" y="260" class="p">RTT, jitter, and loss</text>
+  <rect x="275" y="160" width="180" height="130" fill="#fff0cf" class="box"/><text x="365" y="198" text-anchor="middle" class="h">2. Detect</text><text x="300" y="235" class="p">Failure or threshold</text><text x="300" y="260" class="p">Alert with evidence</text>
+  <rect x="510" y="160" width="180" height="130" fill="#fbe0e0" class="box"/><text x="600" y="198" text-anchor="middle" class="h">3. Decide</text><text x="535" y="235" class="p">Select recovery mode</text><text x="535" y="260" class="p">Validate alternate path</text>
+  <rect x="745" y="160" width="180" height="130" fill="#dff5e7" class="box"/><text x="835" y="198" text-anchor="middle" class="h">4. Recover</text><text x="770" y="235" class="p">Repair flows or fail over</text><text x="770" y="260" class="p">Restore reachability</text>
+  <rect x="980" y="160" width="180" height="130" fill="#e8e0f8" class="box"/><text x="1070" y="198" text-anchor="middle" class="h">5. Verify</text><text x="1005" y="235" class="p">Measure service result</text><text x="1005" y="260" class="p">Persist event and score</text>
+  <path d="M220 225 H275 M455 225 H510 M690 225 H745 M925 225 H980" class="a"/>
+  <path d="M1070 290 V380 H130 V290" class="a"/>
+  <text x="600" y="420" text-anchor="middle" class="p">Feedback loop: verification updates telemetry, alerts, and the next recovery decision.</text>
+</svg>

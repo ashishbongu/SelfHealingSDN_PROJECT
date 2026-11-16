@@ -39,6 +39,10 @@ A Software-Defined Network built with **Mininet**, **Open vSwitch** and the **Ry
  H1 = 10.0.0.1 (00:00:00:00:00:01)     H4 = 10.0.0.4 (00:00:00:00:00:04)
 ```
 
+![Self-Healing SDN system architecture](research_paper/figures/sdn-system-architecture.svg)
+
+![Multipath SDN topology](research_paper/figures/sdn-multipath-topology.svg)
+
 **Port map** (decided by the order of `addLink` calls in `topology.py` – never reorder them):
 
 | Switch | Port 1 | Port 2 | Port 3 |
@@ -217,6 +221,8 @@ Builds the same topology, then walks through scenarios on the **s2–s4** link w
 | `congestion` | 1 at risk | 30 s | max (iperf3 unlimited) | +30 ms delay |
 
 Increase `ROUNDS` at the top of the file to repeat the list and collect more samples.
+
+![Self-healing recovery workflow](research_paper/figures/sdn-recovery-workflow.svg)
 
 ---
 
